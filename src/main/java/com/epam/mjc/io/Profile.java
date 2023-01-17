@@ -79,6 +79,7 @@ public class Profile {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(getName(), getAge(), getEmail(), getPhone());
     }
 }
