@@ -6,7 +6,6 @@ import java.util.HashMap;
 
 
 public class FileReader {
-    File file = new File("C:\\Users\\37128\\IdeaProjects\\stage1-module6-io-task1\\src\\main\\resources\\Profile.txt");
     public Profile getDataFromFile(File file) {
         String email= "";
         int age = 0;
@@ -30,10 +29,6 @@ public class FileReader {
             age = Integer.parseInt(gatavs.get("Age:").trim());
             name = gatavs.get("Name:").trim();
             phone = Long.valueOf(gatavs.get("Phone:").trim());
-            System.out.println(email);
-            System.out.println(age);
-            System.out.println(name);
-            System.out.println(phone);
 
         }catch (FileNotFoundException e) {
             e.printStackTrace();
